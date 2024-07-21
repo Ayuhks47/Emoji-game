@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: #ffeb3b;
+    color: #333;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    color: #ff4081;
+    font-size: 48px;
+    text-shadow: 2px 2px #ff80ab;
+  }
+  
+  #description {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  #guess-input {
+    font-size: 20px;
+    padding: 15px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4081;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  #guess-input:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transform: scale(1.05);
+  }
+  
+  #result {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  #score {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #timer {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  
+  .button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #f50057;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    #guess-input {
+      width: 100%;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  
